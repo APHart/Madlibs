@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #aa1b9f;
+    background-color: #eddece;
+}
+
+p {
+    font-family: Helvetica;
+    color: #008dff;
+}
+
+b {
+    color: #371572;
+}
+
+form {
+    border: dashed 2px #aa1b9f;
+    font-family: cursive, sans-serif;
+    background-color: #b1e2c4;
+    padding: 1em;
+}
+
+html {
+    background-color: #f4f3dc;
+}

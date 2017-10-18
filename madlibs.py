@@ -55,15 +55,15 @@ def show_madlib_form():
         return render_template("game.html", name=player)
 
 
-@app.route('/madlib')
+@app.route('/madlib', methods=["POST"])
 def show_madlib():
     """Shows user their madlib."""
 
-    person = request.args.get("name")
-    color = request.args.get("color")
-    noun = request.args.get("noun")
-    adj = request.args.get("adj")
-    list_of_items = request.args.getlist("items")
+    person = request.form.get("name")
+    color = request.form.get("color")
+    noun = request.form.get("noun")
+    adj = request.form.get("adj")
+    list_of_items = request.form.getlist("items")
 
     if len(list_of_items) > 2:
         item_list = ", ".join(list_of_items[0:-1]) + ", and " + list_of_items[-1]

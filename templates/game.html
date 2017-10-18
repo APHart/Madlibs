@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>Madlib Game</title>
+        <link rel="stylesheet" href="/static/madlibs.css">
     </head>
 
     <body>
         <h1>Welcome to Madlibs! Give us your words below...</h1>
 
-        <form action="/madlib">
+        <form action="/madlib" method="POST">
             Please enter the name of a person: 
             <input type="text" name="name">
             <br>
@@ -31,13 +32,20 @@
             <input type="text" name="adj">
             <br>
             <br>
-            Please check one or more of the following:
+            Please check one or more of the following nouns:
             <input type="checkbox" name="items" value="pencils">Pencils
             <input type="checkbox" name="items" value="computers">Computers
             <input type="checkbox" name="items" value="animals">Stuffed Animals
             <input type="checkbox" name="items" value="coffee">Coffee
             <input type="checkbox" name="items" value="lunch">Lunch
             <input type="checkbox" name="items" value="pillows">Pillows
+            <br>
+            <br>
+            Please check one or more of the following adjectives:
+            <input type="checkbox" name="items" value="awesome">Awesome
+            <input type="checkbox" name="items" value="explosive">Explosive
+            <input type="checkbox" name="items" value="scary">Scary
+            <input type="checkbox" name="items" value="towering">Towering
             <br>
             <br>
             <input type="submit" value="Play!">
