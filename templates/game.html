@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Madlib Game</title>
+    </head>
+
+    <body>
+        <h1>Welcome to Madlibs! Give us your words below...</h1>
+
+        <form action="/madlib">
+            Please enter the name of a person: 
+            <input type="text" name="name">
+            <br>
+            <br>
+            Please select a color:
+                <select name="color">
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                </select>
+            <br>
+            <br>
+            Please enter a noun:
+            <input type="text" name="noun">
+            <br>
+            <br>
+            Please enter an adjective:
+            <input type="text" name="adj">
+            <br>
+            <br>
+            Please check one or more of the following:
+            <input type="checkbox" name="items" value="pencils">Pencils
+            <input type="checkbox" name="items" value="computers">Computers
+            <input type="checkbox" name="items" value="animals">Stuffed Animals
+            <input type="checkbox" name="items" value="coffee">Coffee
+            <input type="checkbox" name="items" value="lunch">Lunch
+            <input type="checkbox" name="items" value="pillow">Pillow
+            <br>
+            <br>
+            <input type="submit" value="Play!">
+
+        </form>
+    </body>
+</html>
