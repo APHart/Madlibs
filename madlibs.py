@@ -66,7 +66,13 @@ def show_madlib():
     list_of_items = request.args.getlist("items")
 
     if len(list_of_items) > 2:
-        item_list = list_of_items[0:-1].join(", ") + "and " + list_of_items[-1]
+        item_list = ", ".join(list_of_items[0:-1]) + ", and " + list_of_items[-1]
+    elif len(list_of_items) == 2:
+        item_list = list_of_items[0] + " and " + list_of_items[1]
+    elif len(list_of_items) == 1:
+        item_list = list_of_items[0]
+    else:
+        item_list = "absolutely nothing"
 
     return render_template("madlib.html",
                            person=person,
